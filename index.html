@@ -1,271 +1,522 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta name="description" content="Portfolio av Matilda Larsson – civilingenjör i Design och Produktutveckling vid Linköpings universitet.">
-  <meta name="theme-color" content="#f5f5f5">
-  <meta property="og:title" content="Portfolio - Matilda Larsson">
-  <meta property="og:description" content="Portfolio av Matilda Larsson – civilingenjör i Design och Produktutveckling vid Linköpings universitet.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/hugo.png">
-  <title>Portfolio - Matilda Larsson</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="Portfolio av Matilda Larsson – civilingenjör i Design och Produktutveckling vid Linköpings universitet."
+    />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta property="og:title" content="Portfolio - Matilda Larsson" />
+    <meta
+      property="og:description"
+      content="Portfolio av Matilda Larsson – civilingenjör i Design och Produktutveckling vid Linköpings universitet."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/app/hugo.webp" />
+    <title>Portfolio - Matilda Larsson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema">
+        <svg
+          class="icon-sun"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg
+          class="icon-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
 
-    <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema">
-      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
+      <h1>Matilda Larsson</h1>
 
-    <h1>Matilda Larsson</h1>
-
-    <section class="about">
-      <div class="about-info">
-        <div class="contact">
-          <a href="mailto:matilda.larsson39@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,7 12,13 2,7"/></svg> matilda.larsson39@gmail.com</a>
-          <a href="tel:+46700650636"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +46 700 65 06 36</a>
-          <a href="https://www.linkedin.com/in/matildalarsson39/"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
+      <section class="about">
+        <div class="about-info">
+          <div class="contact">
+            <a href="mailto:matilda.larsson39@gmail.com"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <polyline points="22,7 12,13 2,7" />
+              </svg>
+              matilda.larsson39@gmail.com</a
+            >
+            <a href="tel:+46700650636"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              +46 700 65 06 36</a
+            >
+            <a href="https://www.linkedin.com/in/matildalarsson39/"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn</a
+            >
+          </div>
         </div>
-      </div>
-      <div class="about-bio">
-        <p>Jag läser min sista termin till civilingenjör i Design och Produktutveckling på Linköpings universitet med masterinriktning teknisk design. I den här portfolion finns information och bilder från några projekt jag genomfört.</p>
-      </div>
-    </section>
-
-    <h1>Projekt</h1>
-
-    <section class="project-grid">
-
-      <a href="#appdesign" class="card" data-project="appdesign">
-        <img class="card-img" src="images/app/hugo.png" alt="Appdesign">
-        <div class="card-title">Appdesign</div>
-      </a>
-
-      <a href="#hall-bench-waste-sorting" class="card" data-project="hall-bench-waste-sorting">
-        <img class="card-img" src="images/banken/bankoppen.png" alt="Hallbänk med avfallssortering" loading="lazy">
-        <div class="card-title">Hallbänk med avfallssortering</div>
-      </a>
-
-      <a href="#bachelor-thesis-product-development" class="card" data-project="bachelor-thesis-product-development">
-        <img class="card-img" src="images/yngve/yngveefter.png" alt="Kandidatarbete produktutveckling" loading="lazy">
-        <div class="card-title">Kandidatarbete produktutveckling</div>
-      </a>
-
-      <a href="#material-for-design" class="card" data-project="material-for-design">
-        <img class="card-img" src="images/lampan/lampa.png" alt="Material för design" loading="lazy">
-        <div class="card-title">Material för design</div>
-      </a>
-
-      <a href="#plywood-stool" class="card" data-project="plywood-stool">
-        <img class="card-img" src="images/pallen/pall2.png" alt="Plywoodpall" loading="lazy">
-        <div class="card-title">Plywoodpall</div>
-      </a>
-
-      <a href="#product-visualization" class="card" data-project="product-visualization">
-        <img class="card-img" src="images/klocka/klockaskisser.png" alt="Produktvisualisering" loading="lazy">
-        <div class="card-title">Produktvisualisering</div>
-      </a>
-
-    </section>
-
-    <h1>Verktyg &amp; kompetenser</h1>
-
-    <section class="skills">
-      <span class="skill-pill">Autodesk Fusion</span>
-      <span class="skill-pill">Blender</span>
-      <span class="skill-pill">Claude Code</span>
-      <span class="skill-pill">Creo</span>
-      <span class="skill-pill">Figma</span>
-      <span class="skill-pill">GIT</span>
-      <span class="skill-pill">Illustrator</span>
-      <span class="skill-pill">Python</span>
-      <span class="skill-pill">Unreal Engine</span>
-      <span class="skill-pill">Visual Studio Code</span>
-    </section>
-
-  </div>
-
-  <!-- Project overlay -->
-  <div class="overlay-backdrop" id="overlay-backdrop">
-    <div class="overlay-content">
-      <button class="overlay-close" aria-label="Stäng">&times;</button>
-
-      <div class="project-overlay" id="project-appdesign">
-        <header class="project-header">
-          <h1>Appdesign</h1>
-        </header>
-        <div class="project-info-bar">
-          <span>HT24</span>
-          <span>Kursnamn</span>
-          <span>Grupparbete</span>
-        </div>
-        <p class="project-description">
-          Det här projektet handlade om att utveckla och utvärdera en interaktiv 
-          prototyp av en app i Figma. I appen skulle användare av en delningstjänst 
-          kunna boka och hyra ut föremål, som exempelvis verktyg, till varandra. User 
-          storys och storymapping användes för att skapa en low-fidelity prototyp. 
-          Denna låg till grund för en high-fidelity prototyp som utvärderades med 
-          hjälp av användartester. Bilderna visar hur startsidan, tids- och 
-          platsbokning samt leverans av verktyg ser ut i appen.
-        </p>
-        <section class="gallery">
-          <img src="images/app/hugo.png" alt="Appdesign - bild 1" loading="lazy">
-      <img src="images/app/hugobokning.png" alt="Appdesign - bild 2" loading="lazy">
-      <img src="images/app/hugoleverans.png" alt="Appdesign - bild 3" loading="lazy">
-        </section>
-      </div>
-
-      <div class="project-overlay" id="project-hall-bench-waste-sorting">
-        <header class="project-header">
-          <h1>Hallbänk med avfallssortering</h1>
-        </header>
-        <div class="project-info-bar">
-          <span>HT24</span>
-          <span>Kursnamn</span>
-          <span>Grupparbete</span>
-        </div>
-        <p class="project-description">
-          Sorteringsbänken är en hallbänk med inbyggd, dold avfallssortering. Bänken 
-          är designad för att vara både en praktisk möbel och en lösning för att 
-          förvara och sortera avfall. Bänken har tre löstagbara hinkar som rymmer ca 
-          20 liter var. Hinkarna kan plockas ur bänken och transporteras var och en 
-          för sig om endast en hink är full. Vid behov kan alla hinkar lyftas ur 
-          samtidigt med hjälp av en ram med handtag. Hinkramen gör det möjligt att 
-          bära alla hinkar i en hand, vilket underlättar transporten av 
-          färdigsorterade sopor till soprum eller återvinningsstation. 
-        </p>
-        <section class="gallery">
-           <img src="images/banken/bankoppen.png" alt="Hallbänk - öppen vy" loading="lazy">
-      <img src="images/banken/hinkram.png" alt="Hinkram" loading="lazy">
-      <img src="images/banken/hinkstangd.png" alt="Hallbänk - stängd" loading="lazy">
-      <img src="images/banken/hinkaroutlines.png" alt="Hallbänk - Outlines" loading="lazy">
-        </section>
-      </div>
-
-      <div class="project-overlay" id="project-bachelor-thesis-product-development">
-        <header class="project-header">
-          <h1>Kandidatarbete produktutveckling</h1>
-        </header>
-        <div class="project-info-bar">
-          <span>VT24</span>
-          <span>Kursnamn</span>
-          <span>Grupparbete</span>
-        </div>
-        <p class="project-description">
-          Mitt kandidatarbete fokuserade på hur olika sammanfogningsmetoder påverkar 
-          möjligheten att upcycla stolar. Tre stolar demonterades för att identifiera 
-          vilka typer av sammanfogningar som använts och vilka utmaningar dessa 
-          innebär för återbruk. Alternativa sammanfogningsmetoder föreslogs för att 
-          stolarna enklare skulle kunna upcyclas. De nya sammanfogningsmetoderna 
-          skulle möjliggöra enkel demontering för att fler delar skulle kunna 
-          återanvändas, vilket bidrar till en mer hållbar och resurssnål designprocess. 
-          Bilderna nedan visar en av de nedmonterade stolarna som monterades ihop igen 
-          med de föreslagna reversibla sammanfogningsmetoderna. 
-        </p>
-        <section class="gallery">
-          <img src="images/yngve/yngveefter.png" alt="Kandidatarbete - stol i miljö" loading="lazy">
-          <img src="images/yngve/yngvefore.png" alt="Kandidatarbete - detaljer" loading="lazy">
-          <img src="images/yngve/yngveoutlines.png" alt="Kandidatarbete - outlines" loading="lazy">
-        </section>
-      </div>
-
-      <div class="project-overlay" id="project-material-for-design">
-        <header class="project-header">
-          <h1>Material för design</h1>
-        </header>
-        <div class="project-info-bar">
-          <span>HT23</span>
-          <span>Kursnamn</span>
-          <span>Grupparbete</span>
-        </div>
-        <p class="project-description">
-          Detta projekt handlade om att kombinera olika material i en produkt som kan 
-          kopplas till begreppet tid. Projektet resulterade i en bordslampa med 
-          mekanisk ljusreglering. Ljusupplevelsen och formen kan regleras genom att 
-          ändra position på två trattar som är placerade i botten och toppen av 
-          lampskärmen. Trattarnas position avgör hur mycket ljus som släpps ut och 
-          reflekteras. Detta gör att lampan kan anpassas efter tid på dygnet eller året. 
-          Lampan är gjord i stål och björkfaner. 
-        </p>
-        <section class="gallery">
-          <img src="images/lampan/lampa.png" alt="Lampa i miljö" loading="lazy">
-          <img src="images/lampan/lampastangd.png" alt="Lampa - detaljstangd" loading="lazy">
-          <img src="images/lampan/lampaoppen.png" alt="Lampa - detaljoppen" loading="lazy">
-        </section>
-      </div>
-
-      <div class="project-overlay" id="project-plywood-stool">
-        <header class="project-header">
-          <h1>Plywoodpall</h1>
-        </header>
-        <div class="project-info-bar">
-          <span>HT24</span>
-          <span>Kursnamn</span>
-          <span>Grupparbete</span>
-        </div>
-        <p class="project-description">
-          I det här projektet fick vi i uppgift att designa och tillverka en pall i 
-          materialet plywood. Vi gjorde prototyper av sitsen i blåskum för att testa 
-          olika sittstorlekar.  Både sitsen och benen är tillverkade av ihoplimmade 
-          plywoodskivor i en CNC-fräs. Pallens ben består av två bågformade delar som 
-          sammanfogats med en halv-i-halv-fog. Sitsen har fyra rampamuffar som benen 
-          är fästa i med skruvar för att pallen ska vara stabil. Pallen är oljad med 
-          en mörkare hårdvaxolja. 
+        <div class="about-bio">
+          <p>
+            Jag läser min sista termin till civilingenjör i Design och
+            Produktutveckling på Linköpings universitet med masterinriktning
+            teknisk design. I den här portfolion finns information och bilder
+            från några projekt från studietiden.
           </p>
-        <section class="gallery">
-          <img src="images/pallen/pall1.png" alt="Plywoodpall - frammifran" loading="lazy">
-          <img src="images/pallen/pall2.png" alt="Plywoodpall - sits" loading="lazy">
-          <img src="images/pallen/pall3.png" alt="Plywoodpall - undersida" loading="lazy">
-          <img src="images/pallen/pallprocess1.png" alt="Plywoodpall - process1" loading="lazy">
-          <img src="images/pallen/pallprocess2.png" alt="Plywoodpall - process2" loading="lazy">
-          <img src="images/pallen/pallprocess3.png" alt="Plywoodpall - process3" loading="lazy">
-          <img src="images/pallen/pallprocess4.png" alt="Plywoodpall - process4" loading="lazy">
-        </section>
-      </div>
-
-      <div class="project-overlay" id="project-product-visualization">
-        <header class="project-header">
-          <h1>Produktvisualisering</h1>
-        </header>
-        <div class="project-info-bar">
-          <span>HT22</span>
-          <span>Kursnamn</span>
-          <span>Enskilt arbete</span>
         </div>
-        <p class="project-description">
-          Det här projektet handlade om att göra en nydesign av en befintlig produkt. 
-          Mitt arbete har utgått från en analog väckarklocka. Bilderna nedan visar 
-          ideskisser, processen av att tillverka en lermodell av det valda konceptet, 
-          den färdiga lermodellen och handgjorda skisser av den färdiga produkten. 
-        </p>
-        <section class="gallery">
-          <img src="images/klocka/klockaskisser.png" alt="Produktvisualisering - skisser" loading="lazy">
-          <img src="images/klocka/klockaprocess1.png" alt="Produktvisualisering - process1" loading="lazy">
-          <img src="images/klocka/klockaprocess2.png" alt="Produktvisualisering - process2" loading="lazy">
-          <img src="images/klocka/klockaprocess3.png" alt="Produktvisualisering - process3" loading="lazy">
-          <img src="images/klocka/klockaprocess4.png" alt="Produktvisualisering - process4" loading="lazy">
-          <img src="images/klocka/lermodell1.png" alt="Produktvisualisering - lera1" loading="lazy">
-          <img src="images/klocka/lermodell2.png" alt="Produktvisualisering - lera2" loading="lazy">
-          <img src="images/klocka/lermodell3.png" alt="Produktvisualisering - lera3" loading="lazy">
-          <img src="images/klocka/Resultat.png" alt="Produktvisualisering - resultat" loading="lazy">
-        </section>
-      </div>
+      </section>
 
+      <h1>Projekt</h1>
+
+      <section class="project-grid">
+        <a href="#appdesign" class="card" data-project="appdesign">
+          <img class="card-img" src="images/app/hugo.webp" alt="Appdesign" />
+          <div class="card-title">Appdesign</div>
+        </a>
+
+        <a
+          href="#hall-bench-waste-sorting"
+          class="card"
+          data-project="hall-bench-waste-sorting"
+        >
+          <img
+            class="card-img"
+            src="images/banken/bankoppen.webp"
+            alt="Hallbänk med avfallssortering"
+            loading="lazy"
+          />
+          <div class="card-title">Hallbänk med avfallssortering</div>
+        </a>
+
+        <a
+          href="#bachelor-thesis-product-development"
+          class="card"
+          data-project="bachelor-thesis-product-development"
+        >
+          <img
+            class="card-img"
+            src="images/yngve/yngveefter.webp"
+            alt="Kandidatarbete produktutveckling"
+            loading="lazy"
+          />
+          <div class="card-title">Kandidatarbete produktutveckling</div>
+        </a>
+
+        <a
+          href="#material-for-design"
+          class="card"
+          data-project="material-for-design"
+        >
+          <img
+            class="card-img"
+            src="images/lampan/lampa.webp"
+            alt="Material för design"
+            loading="lazy"
+          />
+          <div class="card-title">Material för design</div>
+        </a>
+
+        <a href="#plywood-stool" class="card" data-project="plywood-stool">
+          <img
+            class="card-img"
+            src="images/pallen/pall2.webp"
+            alt="Plywoodpall"
+            loading="lazy"
+          />
+          <div class="card-title">Plywoodpall</div>
+        </a>
+
+        <a
+          href="#product-visualization"
+          class="card"
+          data-project="product-visualization"
+        >
+          <img
+            class="card-img"
+            src="images/klocka/klockaskisser.webp"
+            alt="Produktvisualisering"
+            loading="lazy"
+          />
+          <div class="card-title">Produktvisualisering</div>
+        </a>
+      </section>
+
+      <h1>Verktyg &amp; kompetenser</h1>
+
+      <section class="skills">
+        <span class="skill-pill">Autodesk Fusion</span>
+        <span class="skill-pill">Blender</span>
+        <span class="skill-pill">Claude Code</span>
+        <span class="skill-pill">Creo</span>
+        <span class="skill-pill">Figma</span>
+        <span class="skill-pill">GIT</span>
+        <span class="skill-pill">Illustrator</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">Unreal Engine</span>
+        <span class="skill-pill">Visual Studio Code</span>
+      </section>
     </div>
-  </div>
 
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" aria-label="Stäng">&times;</button>
-    <button class="lightbox-prev" aria-label="Föregående">&#10094;</button>
-    <button class="lightbox-next" aria-label="Nästa">&#10095;</button>
-    <img class="lightbox-img" id="lightbox-img" src="" alt="">
-  </div>
+    <!-- Project overlay -->
+    <div class="overlay-backdrop" id="overlay-backdrop">
+      <div class="overlay-content">
+        <button class="overlay-close" aria-label="Stäng">&times;</button>
 
-  <script src="main.js"></script>
-</body>
+        <div class="project-overlay" id="project-appdesign">
+          <header class="project-header">
+            <h1>Appdesign</h1>
+          </header>
+          <div class="project-info-bar">
+            <span>HT24</span>
+            <span>Kursnamn</span>
+            <span>Grupparbete</span>
+          </div>
+          <p class="project-description">
+            Det här projektet handlade om att utveckla och utvärdera en
+            interaktiv prototyp av en app i Figma. I appen skulle användare av
+            en delningstjänst kunna boka och hyra ut föremål, som exempelvis
+            verktyg, till varandra. User storys och storymapping användes för
+            att skapa en low-fidelity prototyp. Denna låg till grund för en
+            high-fidelity prototyp som utvärderades med hjälp av användartester.
+            Bilderna visar hur startsidan, tids- och platsbokning samt leverans
+            av verktyg ser ut i appen.
+          </p>
+          <section class="gallery">
+            <img
+              src="images/app/hugo.webp"
+              alt="Appdesign - bild 1"
+              loading="lazy"
+            />
+            <img
+              src="images/app/hugobokning.webp"
+              alt="Appdesign - bild 2"
+              loading="lazy"
+            />
+            <img
+              src="images/app/hugoleverans.webp"
+              alt="Appdesign - bild 3"
+              loading="lazy"
+            />
+          </section>
+        </div>
+
+        <div class="project-overlay" id="project-hall-bench-waste-sorting">
+          <header class="project-header">
+            <h1>Hallbänk med avfallssortering</h1>
+          </header>
+          <div class="project-info-bar">
+            <span>HT24</span>
+            <span>Designstudio I</span>
+            <span>Enskilt arbete</span>
+          </div>
+          <p class="project-description">
+            Sorteringsbänken är en hallbänk med inbyggd, dold avfallssortering.
+            Bänken är designad för att vara både en praktisk möbel och en
+            lösning för att förvara och sortera avfall. Bänken har tre
+            löstagbara hinkar som rymmer ca 20 liter var. Hinkarna kan plockas
+            ur bänken och transporteras var och en för sig om endast en hink är
+            full. Vid behov kan alla hinkar lyftas ur samtidigt med hjälp av en
+            ram med handtag. Hinkramen gör det möjligt att bära alla hinkar i en
+            hand, vilket underlättar transporten av färdigsorterade sopor till
+            soprum eller återvinningsstation.
+          </p>
+          <section class="gallery">
+            <img
+              src="images/banken/bankoppen.webp"
+              alt="Hallbänk - öppen vy"
+              loading="lazy"
+            />
+            <img src="images/banken/hinkram.webp" alt="Hinkram" loading="lazy" />
+            <img
+              src="images/banken/hinkstangd.webp"
+              alt="Hallbänk - stängd"
+              loading="lazy"
+            />
+            <img
+              src="images/banken/hinkaroutlines.webp"
+              alt="Hallbänk - Outlines"
+              loading="lazy"
+            />
+          </section>
+        </div>
+
+        <div
+          class="project-overlay"
+          id="project-bachelor-thesis-product-development"
+        >
+          <header class="project-header">
+            <h1>Kandidatarbete produktutveckling</h1>
+          </header>
+          <div class="project-info-bar">
+            <span>VT24</span>
+            <span>Kandidatarbete produktutveckling</span>
+            <span>Grupparbete</span>
+          </div>
+          <p class="project-description">
+            Mitt kandidatarbete fokuserade på hur olika sammanfogningsmetoder
+            påverkar möjligheten att upcycla stolar. Tre stolar demonterades för
+            att identifiera vilka typer av sammanfogningar som använts och vilka
+            utmaningar dessa innebär för återbruk. Alternativa
+            sammanfogningsmetoder föreslogs för att stolarna enklare skulle
+            kunna upcyclas. De nya sammanfogningsmetoderna skulle möjliggöra
+            enkel demontering för att fler delar skulle kunna återanvändas,
+            vilket bidrar till en mer hållbar och resurssnål designprocess.
+            Bilderna nedan visar en av de nedmonterade stolarna som monterades
+            ihop igen med de föreslagna reversibla sammanfogningsmetoderna.
+          </p>
+          <section class="gallery">
+            <img
+              src="images/yngve/yngveefter.webp"
+              alt="Kandidatarbete - stol i miljö"
+              loading="lazy"
+            />
+            <img
+              src="images/yngve/yngvefore.webp"
+              alt="Kandidatarbete - detaljer"
+              loading="lazy"
+            />
+            <img
+              src="images/yngve/yngveoutlines.webp"
+              alt="Kandidatarbete - outlines"
+              loading="lazy"
+            />
+          </section>
+        </div>
+
+        <div class="project-overlay" id="project-material-for-design">
+          <header class="project-header">
+            <h1>Material för design</h1>
+          </header>
+          <div class="project-info-bar">
+            <span>HT23</span>
+            <span>Material för design</span>
+            <span>Grupparbete</span>
+          </div>
+          <p class="project-description">
+            Detta projekt handlade om att kombinera olika material i en produkt
+            som kan kopplas till begreppet tid. Projektet resulterade i en
+            bordslampa med mekanisk ljusreglering. Ljusupplevelsen och formen
+            kan regleras genom att ändra position på två trattar som är
+            placerade i botten och toppen av lampskärmen. Trattarnas position
+            avgör hur mycket ljus som släpps ut och reflekteras. Detta gör att
+            lampan kan anpassas efter tid på dygnet eller året. Lampan är gjord
+            i stål och björkfaner.
+          </p>
+          <section class="gallery">
+            <img
+              src="images/lampan/lampa.webp"
+              alt="Lampa i miljö"
+              loading="lazy"
+            />
+            <img
+              src="images/lampan/lampastangd.webp"
+              alt="Lampa - detaljstangd"
+              loading="lazy"
+            />
+            <img
+              src="images/lampan/lampaoppen.webp"
+              alt="Lampa - detaljoppen"
+              loading="lazy"
+            />
+          </section>
+        </div>
+
+        <div class="project-overlay" id="project-plywood-stool">
+          <header class="project-header">
+            <h1>Plywoodpall</h1>
+          </header>
+          <div class="project-info-bar">
+            <span>HT24</span>
+            <span>Träteknik - produktframtagning</span>
+            <span>Grupparbete</span>
+          </div>
+          <p class="project-description">
+            I det här projektet fick vi i uppgift att designa och tillverka en
+            pall i materialet plywood. Vi gjorde prototyper av sitsen i blåskum
+            för att testa olika sittstorlekar. Både sitsen och benen är
+            tillverkade av ihoplimmade plywoodskivor i en CNC-fräs. Pallens ben
+            består av två bågformade delar som sammanfogats med en
+            halv-i-halv-fog. Sitsen har fyra rampamuffar som benen är fästa i
+            med skruvar för att pallen ska vara stabil. Pallen är oljad med en
+            mörkare hårdvaxolja.
+          </p>
+          <section class="gallery">
+            <img
+              src="images/pallen/pall1.webp"
+              alt="Plywoodpall - frammifran"
+              loading="lazy"
+            />
+            <img
+              src="images/pallen/pall2.webp"
+              alt="Plywoodpall - sits"
+              loading="lazy"
+            />
+            <img
+              src="images/pallen/pall3.webp"
+              alt="Plywoodpall - undersida"
+              loading="lazy"
+            />
+            <img
+              src="images/pallen/pallprocess1.webp"
+              alt="Plywoodpall - process1"
+              loading="lazy"
+            />
+            <img
+              src="images/pallen/pallprocess2.webp"
+              alt="Plywoodpall - process2"
+              loading="lazy"
+            />
+            <img
+              src="images/pallen/pallprocess3.webp"
+              alt="Plywoodpall - process3"
+              loading="lazy"
+            />
+            <img
+              src="images/pallen/pallprocess4.webp"
+              alt="Plywoodpall - process4"
+              loading="lazy"
+            />
+          </section>
+        </div>
+
+        <div class="project-overlay" id="project-product-visualization">
+          <header class="project-header">
+            <h1>Produktvisualisering</h1>
+          </header>
+          <div class="project-info-bar">
+            <span>HT25</span>
+            <span><b>Produktvisualisering</b></span>
+            <span>Enskilt arbete</span>
+          </div>
+          <p class="project-description">
+            Det här projektet handlade om att göra en nydesign av en befintlig
+            produkt. Mitt arbete har utgått från en analog väckarklocka.
+            Bilderna nedan visar ideskisser, processen av att tillverka en
+            lermodell av det valda konceptet, den färdiga lermodellen och
+            handgjorda skisser av den färdiga produkten.
+          </p>
+          <section class="gallery">
+            <img
+              src="images/klocka/klockaskisser.webp"
+              alt="Produktvisualisering - skisser"
+              loading="lazy"
+            />
+            <img
+              src="images/klocka/klockaprocess1.webp"
+              alt="Produktvisualisering - process1"
+              loading="lazy"
+            />
+            <img
+              src="images/klocka/klockaprocess2.webp"
+              alt="Produktvisualisering - process2"
+              loading="lazy"
+            />
+            <img
+              src="images/klocka/klockaprocess3.webp"
+              alt="Produktvisualisering - process3"
+              loading="lazy"
+            />
+            <img
+              src="images/klocka/klockaprocess4.webp"
+              alt="Produktvisualisering - process4"
+              loading="lazy"
+            />
+            <img
+              src="images/klocka/lermodell1.webp"
+              alt="Produktvisualisering - lera1"
+              loading="lazy"
+            />
+            <img
+              src="images/klocka/lermodell2.webp"
+              alt="Produktvisualisering - lera2"
+              loading="lazy"
+            />
+            <img
+              src="images/klocka/lermodell3.webp"
+              alt="Produktvisualisering - lera3"
+              loading="lazy"
+            />
+            <img
+              src="images/klocka/Resultat.webp"
+              alt="Produktvisualisering - resultat"
+              loading="lazy"
+            />
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" aria-label="Stäng">&times;</button>
+      <button class="lightbox-prev" aria-label="Föregående">&#10094;</button>
+      <button class="lightbox-next" aria-label="Nästa">&#10095;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
